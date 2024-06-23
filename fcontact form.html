@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link href="<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />">
+    <style>
+        *{
+            font-family: Montserrat;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url(https://img.freepik.com/free-vector/overlapping-forms-background_52683-45675.jpg);
+            background-size: cover;
+
+            
+            
+        }
+        form{
+
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .heading{
+            text-align: center;
+            text-decoration: underline;
+            font-family: Montserrat;
+            font-weight: bold;
+            color: black;
+            
+        }
+
+        .crd{
+            
+            display: block;
+
+            width: 20%;
+            box-shadow: 3px 3px 10px 2px cornflowerblue;
+            border-radius: 10px;
+            padding: 25px;
+            box-sizing: border-box;
+            background-color: whitesmoke;
+        }
+        .text-input{
+            display: block;
+            box-sizing: border-box;
+            width: 100%;
+            
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: none;
+            border-bottom: 2px solid black;
+            background-color: #d2d6df;
+
+            
+
+        }
+        .submit-btn{
+            padding: 5px;
+            margin-bottom: 10%;
+            display: flex;
+            border-radius: 5px;
+            border: none;
+            color: black;
+            background-color: #97ade4;
+            align-self: center;
+            font-weight: 5%;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="crd">
+        <h3 class="heading">Contact Us!</h3>
+        <form>
+            <label for="Name">Name</label>
+            <input class="text-input" id="name" type="text">
+
+            <label for="Email">Email</label>
+            <input class="text-input" id="email" type="email">
+
+            <label for="message">Message</label>
+            
+            <textarea class="text-input" rows="2">Enter your message</textarea>
+            <button class="submit-btn" >Submit</button>
+        </form>
+        
+    </div>
+    
+</body>
+</html>
